@@ -11,9 +11,18 @@
  * 3- Get the word between open closed and reverse the word
  */
 /**
+ * Explore with examples for testing
+ * Explore with simple example removeParentheses(foo(bar)) return foorab
+ * Explore with complex example removeParentheses(foo(foo(bar))blim) return foobaroofblim
+ * Explore with invalid inputs removeParentheses return Missed Parameter
+ */
+/**
  * Big O => o(n)
  */
 const removeParentheses = (str) => {
+  if (!str) {
+    return "Missed Parameter";
+  }
   while (true) {
     let closed = str.indexOf(")");
     if (closed === -1) break;
@@ -29,4 +38,9 @@ const removeParentheses = (str) => {
   }
   return str;
 };
-console.log(removeParentheses("foo(foo(bar))blim"));
+let testCaseOne = removeParentheses("foo(bar)");
+let testCaseTwo = removeParentheses("foo(foo(bar))blim");
+let testCaseThree = removeParentheses();
+console.log(testCaseOne);
+console.log(testCaseTwo);
+console.log(testCaseThree);
