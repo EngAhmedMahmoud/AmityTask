@@ -1,9 +1,9 @@
 # AmityTask
 
-## Running First Task
+## To Run The First Task
 
 `node grouping.js`
 
-## Running Second Task
+## To Run The Second Task
 
 `node removeParentheses.js`
